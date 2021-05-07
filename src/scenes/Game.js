@@ -1,4 +1,6 @@
+/// <reference path="C:/Users/jburn/Desktop/Sicko-Projects/sickooutdoorhunting/typings/phaser.d.ts"/>
 import Phaser from 'phaser';
+import { AutomaticPrefetchPlugin } from 'webpack';
 
 class Game extends Phaser.Scene {
   constructor() {
@@ -10,13 +12,19 @@ class Game extends Phaser.Scene {
   init(data) {}
 
   preload() {
-    this.load.image('logo', 'assets/loadingscreen.png');
+    this.load.image('background', 'assets/loadingscreen.png');
+
+    
+    
   }
 
-  create(data) {
-    this.add.image(400, 300, 'logo');
+  create() {
+    this.add.image(400, 300, 'background');
+
   }
 
+  
+  
   update(time, delta) {}
 }
 
