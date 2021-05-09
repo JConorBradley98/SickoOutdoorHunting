@@ -1,0 +1,70 @@
+{
+	"textures": [
+		{
+			"image": "demomodejsonanim.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1200,
+				"h": 77
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "demomode.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 600,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 600,
+						"h": 77
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 600,
+						"h": 77
+					},
+					"anchor": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				{
+					"filename": "demomode2.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 600,
+						"h": 77
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 600,
+						"h": 77
+					},
+					"frame": {
+						"x": 600,
+						"y": 0,
+						"w": 600,
+						"h": 77
+					},
+					"anchor": {
+						"x": 0.50333333,
+						"y": 0.54545455
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:55124bbfdf9833186a3cd6fd94c4c644:ed2be98bde353c63afc3b8e23df4e251:f0759fc2d4b95969585243009db7f4c5$"
+	}
+}

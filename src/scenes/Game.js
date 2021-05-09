@@ -9,10 +9,13 @@ class Game extends Phaser.Scene {
   }
 
   init(data) {}
+  
 
-
-  //loading Assets (Images)
+  //loading Assets 
   preload() {
+
+    this.load.multiatlas('demomode', 'assets/spritesheet/demomodejsonanim.json', 'assets');
+
     this.load.image('background', 'assets/loadingscreen.png');
 
     this.load.image('title', 'assets/title2.png');
@@ -21,16 +24,8 @@ class Game extends Phaser.Scene {
 
     this.load.image('moneyin',  'assets/moneyin.png')
 
-    this.load.image('demomode', 'assets/demomode.png');
-
     this.load.audio("title_music", "assets/music.mp3");
 
-    this.load.spritesheet("title", 'assets/title2.png',{
-
-    frameHeight: 1,
-    frameWidth: 1,
-
-    });
   }
 
 
@@ -39,17 +34,14 @@ class Game extends Phaser.Scene {
    
     // Create Images 
     this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.52, "title").setDepth(1);
-
     this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.95, "moneyin").setDepth(1);
-
-    this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.12, "demomode").setDepth(1);
-
     this.add.image(0,0, "background").setDisplayOrigin(0).setDepth(0);
-
+ 
+    //play Button
     let playButton = this.add.image(this.game.renderer.width / 2, this.game.renderer.height / 1.20, "insertmoney").setDepth(1);
 
-    ///create sprites
-
+    
+  
     ///Create audio disable pause on blur
     this.sound.pauseOnBlur = false;
     this.sound.play("title_music", {
@@ -57,6 +49,29 @@ class Game extends Phaser.Scene {
     });
 
     //create animation
+    
+    var demomode = this.add.sprite(0, 0, 'demomode', 'assets/spritesheet/demomodejsonanim.json');
+    
+    this.anims.create({
+      key: 'demomode',
+      frameRate: 1,
+      frames: this.anims.generateFrameNumbers('demomode', { start: 1, end: 2,}),
+      repeat: -1,
+      
+      
+
+      
+    });
+    
+    function createscene(){
+
+      //Animation Definitions here
+      
+    }
+
+    //Title Animation Experiment
+
+   
 
 
 

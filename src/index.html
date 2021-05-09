@@ -18,6 +18,29 @@
 <body>
 
   <div id="game"></div>
+  <script>
+
+    const phaserConfig = {
+      type: Phaser.AUTO,
+      parent: "game",
+                width: 1440,
+                height: 1080,
+                scene:{
+                  init: initScene,
+                  preload: preloadScene,
+                  create: createScene,
+                  update: updateScene
+            }
+      };
+
+      const game = new Phaser.Game(phaserConfig);
+
+      var demomode;
+
+
+
+
+  </script>
   
 </body>
 
