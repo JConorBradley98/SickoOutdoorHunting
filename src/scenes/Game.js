@@ -11,7 +11,7 @@ class Game extends Phaser.Scene {
   init(data) {}
 
 
-  //loading Assets
+  //loading Assets (Images)
   preload() {
     this.load.image('background', 'assets/loadingscreen.png');
 
@@ -42,6 +42,8 @@ class Game extends Phaser.Scene {
 
     this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.95, "moneyin").setDepth(1);
 
+    this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.12, "demomode").setDepth(1);
+
     this.add.image(0,0, "background").setDisplayOrigin(0).setDepth(0);
 
     let playButton = this.add.image(this.game.renderer.width / 2, this.game.renderer.height / 1.20, "insertmoney").setDepth(1);
@@ -55,6 +57,7 @@ class Game extends Phaser.Scene {
     });
 
     //create animation
+
 
 
     //make image buttons interacrive
